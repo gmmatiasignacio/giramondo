@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: giramondo
+    name: giramondo-store
     env: node
     buildCommand: npm install
     startCommand: node server.js
@@ -10,6 +10,6 @@ services:
       - key: FLOW_SECRET
         value: 71620f26c763b7565f9afe89f2777872f44348eb
       - key: BASE_URL
-        value: https://giramondo.onrender.com
+        value: https://giramondo-store.onrender.com
       - key: GMAIL_APP_PASSWORD
-        sync: false
+        value: coms qpkk npsn cexa

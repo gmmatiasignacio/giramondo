@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 const FLOW_API_KEY = process.env.FLOW_API_KEY || '1F116A19-C5A0-4EDE-AC86-76A0765L058C';
 const FLOW_SECRET = process.env.FLOW_SECRET || '71620f26c763b7565f9afe89f2777872f44348eb';
 const FLOW_API_URL = 'https://www.flow.cl/api';
-const BASE_URL = process.env.BASE_URL || 'https://giramondo.onrender.com';
+const BASE_URL = process.env.BASE_URL || 'https://giramondo-store.onrender.com';
 const NOTIFY_EMAIL = 'gmmatiasignacio@gmail.com';
 const WHATSAPP = '+56996243833';
 
