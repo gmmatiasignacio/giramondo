@@ -1,15 +1,14 @@
-services:
-  - type: web
-    name: giramondo-store
-    env: node
-    buildCommand: npm install
-    startCommand: node server.js
-    envVars:
-      - key: FLOW_API_KEY
-        value: 1F116A19-C5A0-4EDE-AC86-76A0765L058C
-      - key: FLOW_SECRET
-        value: 71620f26c763b7565f9afe89f2777872f44348eb
-      - key: BASE_URL
-        value: https://giramondo-store.onrender.com
-      - key: GMAIL_APP_PASSWORD
-        value: coms qpkk npsn cexa
+{
+  "name": "giramondo",
+  "version": "1.0.0",
+  "description": "Giramondo - Te acercamos lo lejano",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.7.0",
+    "nodemailer": "^6.9.7"
+  }
+}
