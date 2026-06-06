@@ -379,12 +379,12 @@ function renderCtrl(id) {
   if (!el) return;
   if (carrito[id] && carrito[id].qty > 0) {
     el.innerHTML = '<div class="qty-controls">' +
-      '<button class="qty-btn" onclick="cambiarQty(''+id+'',-1)">−</button>' +
+      '<button class="qty-btn" onclick="cambiarQty(\'' + id + '\',-1)">−</button>' +
       '<span class="qty-num">' + carrito[id].qty + '</span>' +
-      '<button class="qty-btn" onclick="cambiarQty(''+id+'',1)">+</button>' +
+      '<button class="qty-btn" onclick="cambiarQty(\'' + id + '\',1)">+</button>' +
     '</div>';
   } else {
-    el.innerHTML = '<button class="btn-agregar" onclick="agregar(''+id+'',''+NOMBRES[id]+'','+PRECIOS[id]+')">+ Agregar</button>';
+    el.innerHTML = '<button class="btn-agregar" onclick="agregar(\'' + id + '\',\'' + NOMBRES[id] + '\',' + PRECIOS[id] + ')">+ Agregar</button>';
   }
 }
 
@@ -424,9 +424,9 @@ function actualizarUI() {
         '<span class="cart-item-name">' + carrito[k].nombre + '</span>' +
         '<div class="cart-item-right">' +
           '<div class="qty-controls">' +
-            '<button class="qty-btn" onclick="cambiarQty(''+k+'',-1)">−</button>' +
+            '<button class="qty-btn" onclick="cambiarQty(\'' + k + '\',-1)">−</button>' +
             '<span class="qty-num">' + carrito[k].qty + '</span>' +
-            '<button class="qty-btn" onclick="cambiarQty(''+k+'',1)">+</button>' +
+            '<button class="qty-btn" onclick="cambiarQty(\'' + k + '\',1)">+</button>' +
           '</div>' +
           '<span class="cart-item-price">$' + (carrito[k].precio * carrito[k].qty).toLocaleString('es-CL') + '</span>' +
         '</div>' +
